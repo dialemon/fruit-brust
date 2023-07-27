@@ -22,8 +22,76 @@
   </script>
   <!-- font awesome -->
 <script src="https://kit.fontawesome.com/d24946b276.js" crossorigin="anonymous"></script>
+ <!-- fonts lato 400, 700, 900 -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d24946b276.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./styles/style.css">
+<style>
+  .font-lato{
+    font-family: 'Lato', sans-serif;
+  }
+</style>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'fc': '#121212',
+          'main': '#F85559'
+        }
+      }
+    }
+  }
+</script>
 </head>
-<body>
-    
+<body class="font-lato text-fc">
+  <!-- header section -->
+    <header class="container mx-auto">
+   <!-- navbar section -->
+      <nav class="py-4">
+        <div class="navbar md:bg-main rounded-full">
+          <div class="navbar-center  hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <div class="flex-1 lg:justify-center justify-start">
+              <a class="btn btn-ghost normal-case text-2xl md:text-white font-extrabold"><img class="w-8" src="images/logo.png" alt="">Fruit Brust</a>
+            </div>
+            <div class="flex-none px-2 md:px-4 lg:px-6">
+              <div class="form-control hidden md:block relative">
+                <input type="text" placeholder="Search here" class=" py-2 rounded-full px-2 w-24 md:w-auto" />
+                <i class="fa-solid fa-magnifying-glass top-3 left-40 absolute"></i>
+              </div>
+              <div class="dropdown dropdown-end lg:hidden md:block">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full ">
+                    <i class="fa-solid fa-bars mt-4"></i>
+                  </div>
+                </label>
+                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </nav>
+     <!-- banner section -->
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
